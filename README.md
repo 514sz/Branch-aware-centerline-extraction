@@ -1,5 +1,4 @@
 # Branch-aware-centerline-extraction
-# BEACCE
 
 Code for our paper "[Branch-Aware Double DQN for Centerline Extraction in Coronary CT Angiography](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_4)". 
 
