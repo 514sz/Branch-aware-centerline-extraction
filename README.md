@@ -39,20 +39,6 @@ python detector.py
 ```
 python app.py
 ```
-    
-## Results
-
-Multi-planar reconstructions using successfully extracted centerlines (in red) of arteries with (a) no plaque (RCA in data00), (b) a soft plaque (LAD in data01), (c) a calcified plaque (RCA in data08) and (d) a mixed plaque (LAD in data17). All plaques are indicated by blue boxes.
-
-<p align="center">
-    <img src="figures/fig7.png">
-</p>
-
-(a1)(b1) Extraction results by termination criterion without segment-depth weighting strategy. (a2)(b2) Extraction results by termination criterion with segment-depth weighting strategy. Each centerline in (a2)(b2) has a extra part (in red) than that in (a1)(b1). Centerline trees extracted using the termination criterion based on segment-depth weighting strategy were more complete.
-
-<p align="center">
-    <img src="figures/fig8.png"> 
-</p>
 
 ## Cite
 
