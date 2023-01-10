@@ -5,12 +5,6 @@ Code for our paper "[Branch-Aware Double DQN for Centerline Extraction in Corona
 - Propose the Double Deep Q-network based coronary artery tracing method in CCTA for the first time.
 - Extracts the entire coronary tree with lower time-cost than other state-of-the-art methods, uses only one seed and terminates tracing automatically.
 
-The pipeline of our method is shown below:
-
-<p align="center">
-    <img src="figures/framework.png"> 
-
-
 
 ## Requirements
 
