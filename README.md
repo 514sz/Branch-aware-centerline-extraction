@@ -12,19 +12,33 @@ A branch-aware coronary centerline extraction approach (BACCE) is introduced, wh
 
 <img src="https://github.com/514sz/Image-store/blob/main/fig2.png" width="800" height="600">
 
-A single seed is firsly placed at the coronary 'trunk'. The tracker starts from the seed to track the centerline. Meanwhile, the detector detects whether the tracker is located at a bifurcation-point or an endpoint, and estimates the vessel radius. At the bifurcation point, the ray-burst sampling algorithm is executed to detect branches, and the tracker will track the detected branches; at the endpoint, the tracker will terminate tracking the current branch, and continue to track other branches. This process is repeated until all branches have been extracted.
+A single seed is firsly placed at the coronary 'trunk'. The tracker starts from the seed. Meanwhile, the detector detects whether the tracker is located at a bifurcation-point or an endpoint, and estimates the vessel radius. At the bifurcation point, the ray-burst sampling algorithm is executed to detect branches, and the tracker will track the detected branches; at the endpoint, the tracker will terminate tracking the current branch, and continue to track other branches. This process is repeated until all branches have been extracted.
+
+Two networks need to be trained:
+
+- The tracker to track the coronary centerline.
+- The detector to detect bifurcation-points and endpoints, and estimate the radius of the coronary artery.
 
 
 
-## Requirements
+## Installation
 
-Python 3.6.2
+```
+pip install -r requirement.txt
+```
 
-Pytorch 1.7
+## Training
 
-CUDA 11.2
+### 1. Preparing CTA08 dataset
 
-## Coordinate transformation
+&#9888;
+The website of CAT08 dataset is no longer accessible. You can contact Dr.Theo van Walsum (t.vanwalsum@erasmusmc.nl) to acquire this dataset.
+
+1. Unzip training.tar.gz to:
+
+
+
+
 
 ```
 python w_coor2v_coor.py
