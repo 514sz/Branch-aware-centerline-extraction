@@ -35,21 +35,66 @@ pip install -r requirement.txt
 The website of CAT08 dataset is no longer accessible. You can contact Dr.Theo van Walsum (t.vanwalsum@erasmusmc.nl) to acquire this dataset.
 
 1. Unzip training.tar.gz to:
-
-
-
-
+```
+    home/
+        -zyy/
+            -training/
+                -dataset00/
+                -dataset01/
+                -dataset02/
+                -dataset03/
+                -dataset04/
+                -dataset05/
+                -dataset06/
+                -dataset07/
+```
+2. Construct training data for the tracker:
 
 ```
-python w_coor2v_coor.py
+python3 Training_data_tracker.py
 ```
+
+3. Construct training data for the detector:
+
+```
+python3 Training_data_detector.py
+```
+
+training data are prepared:
+```
+-home/
+    -zyy/
+        -training/
+            -dataset00/
+                -vessel0/
+                    vox_radi.npy
+                    -patch/
+                        patch0.npy
+                        .
+                        .
+                    -detector_label/
+                        label0.txt
+                        .
+                        . 
+                .        
+                .
+            .
+            .
+```
+
     
-## Training
+### 2. Training models
 
+1. Training tracker model
 ```
-python ddqn.py
-python detector.py
+cd RL_Centerline/
+python3 Train_Tracker.py
+```
 
+2. Training detector model
+```bash
+cd RL_centerline/
+python3 Train_Detector.py
 ```
 
 ## Inference
