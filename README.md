@@ -97,13 +97,13 @@ cd RL_centerline/
 python3 Train_Detector.py
 ```
 
-## Inference
+### 3. Extracting coronary centerline tree
 
 ```
-python app.py
+python CenterlineTreeExtraction.py
 ```
 
-## Cite
+## References
 
 Please consider citing this project in your publications if it helps your research. The following is a BibTeX reference. The BibTeX entry requires the url LaTeX package.
 
