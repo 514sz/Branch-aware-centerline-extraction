@@ -24,7 +24,7 @@ Two networks need to be trained:
 ## Installation
 
 ```
-cd RL_Centerline
+cd Branch-aware-centerline-extraction
 pip install -r requirement.txt
 ```
 
@@ -52,14 +52,14 @@ The website of CAT08 dataset is no longer accessible. You can contact Dr.Theo va
 2. Construct training data for the tracker:
 
 ```
-cd RL_Centerline
+cd Branch-aware-centerline-extraction
 python3 Training_data_tracker.py
 ```
 
 3. Construct training data for the detector:
 
 ```
-cd RL_Centerline
+cd Branch-aware-centerline-extraction
 python3 Training_data_detector.py
 ```
 
@@ -90,20 +90,20 @@ training data are prepared:
 
 1. Training tracker model
 ```
-cd RL_Centerline/
+cd Branch-aware-centerline-extraction/
 python3 Train_Tracker.py
 ```
 
 2. Training detector model
 ```bash
-cd RL_centerline/
+cd Branch-aware-centerline-extraction/
 python3 Train_Detector.py
 ```
 
 ### 3. Extracting coronary centerline tree
 
 ```
-cd RL_Centerline
+cd Branch-aware-centerline-extraction
 python3 CenterlineTreeExtraction.py
 ```
 
