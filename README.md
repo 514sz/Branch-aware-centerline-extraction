@@ -1,9 +1,14 @@
 # Branch-aware-centerline-extraction
 
-Code for our paper "[Branch-Aware Double DQN for Centerline Extraction in Coronary CT Angiography](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_4)". 
+The PyTorch re-implement of a branch-aware coronary centerline extraction in CT Angiography images. (paper: '[Branch-Aware Double DQN for Centerline Extraction in Coronary CT Angiography](https://link.springer.com/chapter/10.1007/978-3-030-59725-2_4)')
 
-- Propose the Double Deep Q-network based coronary artery tracing method in CCTA for the first time.
-- Extracts the entire coronary tree with lower time-cost than other state-of-the-art methods, uses only one seed and terminates tracing automatically.
+- Detecting the vessel branches automatically.
+- Extracting the entire coronary tree with only one seed, and terminating the tracing process automatically.
+
+## Key idea
+
+A branch-aware coronary centerline extraction approach (BACCE) is introduced, which is based on Double Deep Q-Network (DDQN) and 3D dilated CNN. It consists of two parts: a DDQN based tracker and a branch-aware detector. The tracker predicts the next action of an agent to trace the centerline. The detector detects the bifurcation-points and radius of the coronary artery. The detector enable the BACCE to trace the coronary branches automatically. As a result, the BACCE only needs one seed at the coronary 'trunk' to extract the entire coronary tree.
+
 
 
 ## Requirements
