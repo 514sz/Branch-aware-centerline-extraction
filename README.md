@@ -109,7 +109,7 @@ python3 CenterlineTreeExtraction.py
 
 The extracted coronary artery tree is as follows:
 
-<img src="https://github.com/514sz/Image-store/blob/main/fig4.png" width="800" height="600">
+<img src="https://github.com/514sz/Branch-aware-centerline-extraction/blob/master/images/results.png" width="800" height="600">
 
 ## References
 
