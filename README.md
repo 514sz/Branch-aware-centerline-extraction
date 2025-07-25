@@ -10,6 +10,11 @@ The PyTorch re-implement of a branch-aware coronary centerline extraction in CT 
 A branch-aware coronary centerline extraction approach (BACCE) is introduced, which is based on Double Deep Q-Network (DDQN) and 3D dilated CNN. It consists of two parts: a DDQN based tracker and a branch-aware detector. The tracker predicts the next action of an agent to trace the centerline. The detector detects the bifurcation-points and radius of the coronary artery. The detector enable the BACCE to trace the coronary branches automatically. As a result, the BACCE only needs one seed at the coronary 'trunk' to extract the entire coronary tree.
 
 
+<img src="https://github.com/514sz/Image-store/blob/main/fig2.png" width="800" height="600">
+
+A single seed is firsly placed at the coronary 'trunk'. The tracker starts from the seed to track the centerline. Meanwhile, the detector detects whether the tracker is located at a bifurcation-point or an endpoint, and estimates the vessel radius. At the bifurcation point, the ray-burst sampling algorithm is executed to detect branches, and the tracker will track the detected branches; at the endpoint, the tracker will terminate tracking the current branch, and continue to track other branches. This process is repeated until all branches have been extracted.
+
+
 
 ## Requirements
 
