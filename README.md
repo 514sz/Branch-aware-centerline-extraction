@@ -103,6 +103,10 @@ python3 Train_Detector.py
 python CenterlineTreeExtraction.py
 ```
 
+The extracted coronary artery tree is as follows:
+
+<img src="https://github.com/514sz/Image-store/blob/main/fig4.png" width="800" height="600">
+
 ## References
 
 Please consider citing this project in your publications if it helps your research. The following is a BibTeX reference. The BibTeX entry requires the url LaTeX package.
